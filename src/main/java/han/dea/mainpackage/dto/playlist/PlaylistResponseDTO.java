@@ -5,9 +5,9 @@ import java.util.List;
 public class PlaylistResponseDTO
 {
     private int length;
-    private List<PlaylistDTO> playlists;
+    private List<PlaylistRequestDTO> playlists;
 
-    public PlaylistResponseDTO(int length, List<PlaylistDTO> playlists)
+    public PlaylistResponseDTO(int length, List<PlaylistRequestDTO> playlists)
     {
         this.length = length;
         this.playlists = playlists;
@@ -21,11 +21,11 @@ public class PlaylistResponseDTO
         this.length = length;
     }
 
-    public List<PlaylistDTO> getPlaylists() {
+    public List<PlaylistRequestDTO> getPlaylists() {
         return playlists;
     }
 
-    public void setPlaylists(List<PlaylistDTO> playlists) {
+    public void setPlaylists(List<PlaylistRequestDTO> playlists) {
         this.playlists = playlists;
     }
 

@@ -2,7 +2,7 @@ package han.dea.mainpackage.services;
 
 import han.dea.mainpackage.dao.PlaylistDAO;
 import han.dea.mainpackage.dao.UserDAO;
-import han.dea.mainpackage.dto.playlist.PlaylistDTO;
+import han.dea.mainpackage.dto.playlist.PlaylistRequestDTO;
 import han.dea.mainpackage.dto.playlist.PlaylistResponseDTO;
 import han.dea.mainpackage.dto.track.TrackDTO;
 
@@ -27,10 +27,10 @@ public class PlaylistService
         playlistDAO.updatePlaylistName(id,newName);
     }
 
-    public void insertPlaylist(String token, PlaylistDTO playlistDTO)
+    public void insertPlaylist(String token, PlaylistRequestDTO playlistRequestDTO)
     {
         int id = userDAO.getUserIdWithToken(token);
-        playlistDAO.insertPlaylist(id, playlistDTO);
+        playlistDAO.insertPlaylist(id, playlistRequestDTO);
     }
 
     public void deletePlaylist(int id, String token)

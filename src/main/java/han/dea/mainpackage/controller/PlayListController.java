@@ -1,7 +1,6 @@
 package han.dea.mainpackage.controller;
 
-import han.dea.mainpackage.dto.playlist.PlaylistDTO;
-import han.dea.mainpackage.dto.playlist.RequestPlaylistDTO;
+import han.dea.mainpackage.dto.playlist.PlaylistRequestDTO;
 import han.dea.mainpackage.dto.track.TrackDTO;
 import han.dea.mainpackage.services.PlaylistService;
 import han.dea.mainpackage.services.TrackService;
@@ -39,9 +38,9 @@ public class PlayListController
     @Consumes(MediaType.APPLICATION_JSON)
     @Produces(MediaType.APPLICATION_JSON)
     @Path("/{id}")
-    public Response editPlaylist(RequestPlaylistDTO requestPlaylistDTO, @PathParam("id") int id, @QueryParam("token") String token)
+    public Response editPlaylist(PlaylistRequestDTO playlistRequestDTO, @PathParam("id") int id, @QueryParam("token") String token)
     {
-        playlistService.updatePlaylist(id,requestPlaylistDTO.getName());
+        playlistService.updatePlaylist(id, playlistRequestDTO.getName());
         return Response.ok(playlistService).build();
     }
 
@@ -58,9 +57,9 @@ public class PlayListController
     @POST
     @Produces(MediaType.APPLICATION_JSON)
     @Consumes(MediaType.APPLICATION_JSON)
-    public Response insertPlaylist(@QueryParam("token") String token,PlaylistDTO playlistDTO)
+    public Response insertPlaylist(@QueryParam("token") String token, PlaylistRequestDTO playlistRequestDTO)
     {
-        playlistService.insertPlaylist(token, playlistDTO);
+        playlistService.insertPlaylist(token, playlistRequestDTO);
         return Response.ok(playlistService.getPlaylists(token)).build();
     }
 

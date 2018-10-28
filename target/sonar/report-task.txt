@@ -3,5 +3,5 @@ projectKey=HugoEekhoudt_spotitube
 serverUrl=https://sonarcloud.io
 serverVersion=7.4.0.18669
 dashboardUrl=https://sonarcloud.io/dashboard?id=HugoEekhoudt_spotitube
-ceTaskId=AWaxTC1j94ApvXY3cOzF
-ceTaskUrl=https://sonarcloud.io/api/ce/task?id=AWaxTC1j94ApvXY3cOzF
+ceTaskId=AWaxXkJq93J9j99zCdka
+ceTaskUrl=https://sonarcloud.io/api/ce/task?id=AWaxXkJq93J9j99zCdka

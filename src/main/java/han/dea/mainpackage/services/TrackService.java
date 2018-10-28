@@ -19,4 +19,9 @@ public class TrackService
     {
         return trackDAO.getAllTracksExceptForCurrentPlaylist(playlistID);
     }
+
+    public void setTrackDAO(TrackDAO trackDAO)
+    {
+        this.trackDAO = trackDAO;
+    }
 }

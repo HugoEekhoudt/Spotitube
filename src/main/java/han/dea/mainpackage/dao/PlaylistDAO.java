@@ -1,6 +1,6 @@
 package han.dea.mainpackage.dao;
 
-import han.dea.mainpackage.dto.playlist.PlaylistDTO;
+import han.dea.mainpackage.dto.playlist.PlaylistRequestDTO;
 import han.dea.mainpackage.dto.track.TrackDTO;
 
 import javax.inject.Inject;
@@ -20,9 +20,9 @@ public class PlaylistDAO
 
     private static final Logger log = Logger.getLogger(PlaylistDAO.class.getName());
 
-    public List<PlaylistDTO> getPlaylists(String token)
+    public List<PlaylistRequestDTO> getPlaylists(String token)
     {
-        List<PlaylistDTO> playlist = new ArrayList<>();
+        List<PlaylistRequestDTO> playlist = new ArrayList<>();
 
         try {
             connectionDAO.startConnection();
@@ -41,12 +41,12 @@ public class PlaylistDAO
                     owner = true;
                 }
 
-                PlaylistDTO playlistDTO = new PlaylistDTO();
-                playlistDTO.setId(connectionDAO.getResultSet().getInt(1));
-                playlistDTO.setName(connectionDAO.getResultSet().getString(2));
-                playlistDTO.setOwner(owner);
+                PlaylistRequestDTO playlistRequestDTO = new PlaylistRequestDTO();
+                playlistRequestDTO.setId(connectionDAO.getResultSet().getInt(1));
+                playlistRequestDTO.setName(connectionDAO.getResultSet().getString(2));
+                playlistRequestDTO.setOwner(owner);
                 playlist.add(
-                        playlistDTO
+                        playlistRequestDTO
                 );
             }
             return playlist;
@@ -86,7 +86,7 @@ public class PlaylistDAO
         }
     }
 
-    public void insertPlaylist(int id, PlaylistDTO playlistDTO)
+    public void insertPlaylist(int id, PlaylistRequestDTO playlistRequestDTO)
     {
         try
         {
@@ -94,7 +94,7 @@ public class PlaylistDAO
             String query = "INSERT INTO playlist (name, owner) VALUES (?,?)";
 
             connectionDAO.setPreparedStatement(connectionDAO.getConnection().prepareStatement(query));
-            connectionDAO.getPreparedStatement().setString(1, playlistDTO.getName());
+            connectionDAO.getPreparedStatement().setString(1, playlistRequestDTO.getName());
             connectionDAO.getPreparedStatement().setInt(2, id);
 
             connectionDAO.getPreparedStatement().executeUpdate();

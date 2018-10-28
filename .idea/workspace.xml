@@ -1,20 +1,853 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="ArtifactsWorkspaceSettings">
+    <artifacts-to-build>
+      <artifact name="jee:war" />
+    </artifacts-to-build>
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="6407bb8f-3a60-42b4-988b-a006f56fc94b" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/han/dea/mainpackage/controller/TrackControllerTester.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/han/dea/mainpackage/dao/TrackDaoTester.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/han/dea/mainpackage/service/TrackServiceTester.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/han/dea/mainpackage/controller/PlayListController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/han/dea/mainpackage/controller/PlayListController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/han/dea/mainpackage/controller/TrackController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/han/dea/mainpackage/controller/TrackController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/han/dea/mainpackage/dao/PlaylistDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/han/dea/mainpackage/dao/PlaylistDAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/han/dea/mainpackage/dto/playlist/PlaylistDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/han/dea/mainpackage/dto/playlist/PlaylistRequestDTO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/han/dea/mainpackage/dto/playlist/PlaylistResponseDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/han/dea/mainpackage/dto/playlist/PlaylistResponseDTO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/han/dea/mainpackage/dto/playlist/RequestPlaylistDTO.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/han/dea/mainpackage/services/PlaylistService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/han/dea/mainpackage/services/PlaylistService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/han/dea/mainpackage/services/TrackService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/han/dea/mainpackage/services/TrackService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/han/dea/mainpackage/controller/PlayListController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/han/dea/mainpackage/controller/PlayListController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/han/dea/mainpackage/dto/playlist/PlaylistDTO.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/sonar/report-task.txt" beforeDir="false" afterPath="$PROJECT_DIR$/target/sonar/report-task.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/sonar/ucfg/java/ucfg_10.proto" beforeDir="false" afterPath="$PROJECT_DIR$/target/sonar/ucfg/java/ucfg_10.proto" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/sonar/ucfg/java/ucfg_11.proto" beforeDir="false" afterPath="$PROJECT_DIR$/target/sonar/ucfg/java/ucfg_11.proto" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/sonar/ucfg/java/ucfg_12.proto" beforeDir="false" afterPath="$PROJECT_DIR$/target/sonar/ucfg/java/ucfg_12.proto" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/sonar/ucfg/java/ucfg_13.proto" beforeDir="false" afterPath="$PROJECT_DIR$/target/sonar/ucfg/java/ucfg_13.proto" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/sonar/ucfg/java/ucfg_14.proto" beforeDir="false" afterPath="$PROJECT_DIR$/target/sonar/ucfg/java/ucfg_14.proto" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/sonar/ucfg/java/ucfg_15.proto" beforeDir="false" afterPath="$PROJECT_DIR$/target/sonar/ucfg/java/ucfg_15.proto" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/sonar/ucfg/java/ucfg_16.proto" beforeDir="false" afterPath="$PROJECT_DIR$/target/sonar/ucfg/java/ucfg_16.proto" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/sonar/ucfg/java/ucfg_17.proto" beforeDir="false" afterPath="$PROJECT_DIR$/target/sonar/ucfg/java/ucfg_17.proto" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/sonar/ucfg/java/ucfg_18.proto" beforeDir="false" afterPath="$PROJECT_DIR$/target/sonar/ucfg/java/ucfg_18.proto" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/sonar/ucfg/java/ucfg_19.proto" beforeDir="false" afterPath="$PROJECT_DIR$/target/sonar/ucfg/java/ucfg_19.proto" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/sonar/ucfg/java/ucfg_20.proto" beforeDir="false" afterPath="$PROJECT_DIR$/target/sonar/ucfg/java/ucfg_20.proto" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/sonar/ucfg/java/ucfg_21.proto" beforeDir="false" afterPath="$PROJECT_DIR$/target/sonar/ucfg/java/ucfg_21.proto" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/sonar/ucfg/java/ucfg_22.proto" beforeDir="false" afterPath="$PROJECT_DIR$/target/sonar/ucfg/java/ucfg_22.proto" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/sonar/ucfg/java/ucfg_23.proto" beforeDir="false" afterPath="$PROJECT_DIR$/target/sonar/ucfg/java/ucfg_23.proto" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/sonar/ucfg/java/ucfg_24.proto" beforeDir="false" afterPath="$PROJECT_DIR$/target/sonar/ucfg/java/ucfg_24.proto" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/sonar/ucfg/java/ucfg_25.proto" beforeDir="false" afterPath="$PROJECT_DIR$/target/sonar/ucfg/java/ucfg_25.proto" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/sonar/ucfg/java/ucfg_26.proto" beforeDir="false" afterPath="$PROJECT_DIR$/target/sonar/ucfg/java/ucfg_26.proto" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/sonar/ucfg/java/ucfg_27.proto" beforeDir="false" afterPath="$PROJECT_DIR$/target/sonar/ucfg/java/ucfg_27.proto" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/sonar/ucfg/java/ucfg_28.proto" beforeDir="false" afterPath="$PROJECT_DIR$/target/sonar/ucfg/java/ucfg_28.proto" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/sonar/ucfg/java/ucfg_29.proto" beforeDir="false" afterPath="$PROJECT_DIR$/target/sonar/ucfg/java/ucfg_29.proto" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/sonar/ucfg/java/ucfg_3.proto" beforeDir="false" afterPath="$PROJECT_DIR$/target/sonar/ucfg/java/ucfg_3.proto" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/sonar/ucfg/java/ucfg_30.proto" beforeDir="false" afterPath="$PROJECT_DIR$/target/sonar/ucfg/java/ucfg_30.proto" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/sonar/ucfg/java/ucfg_31.proto" beforeDir="false" afterPath="$PROJECT_DIR$/target/sonar/ucfg/java/ucfg_31.proto" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/sonar/ucfg/java/ucfg_32.proto" beforeDir="false" afterPath="$PROJECT_DIR$/target/sonar/ucfg/java/ucfg_32.proto" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/sonar/ucfg/java/ucfg_33.proto" beforeDir="false" afterPath="$PROJECT_DIR$/target/sonar/ucfg/java/ucfg_33.proto" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/sonar/ucfg/java/ucfg_34.proto" beforeDir="false" afterPath="$PROJECT_DIR$/target/sonar/ucfg/java/ucfg_34.proto" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/sonar/ucfg/java/ucfg_35.proto" beforeDir="false" afterPath="$PROJECT_DIR$/target/sonar/ucfg/java/ucfg_35.proto" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/sonar/ucfg/java/ucfg_36.proto" beforeDir="false" afterPath="$PROJECT_DIR$/target/sonar/ucfg/java/ucfg_36.proto" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/sonar/ucfg/java/ucfg_37.proto" beforeDir="false" afterPath="$PROJECT_DIR$/target/sonar/ucfg/java/ucfg_37.proto" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/sonar/ucfg/java/ucfg_38.proto" beforeDir="false" afterPath="$PROJECT_DIR$/target/sonar/ucfg/java/ucfg_38.proto" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/sonar/ucfg/java/ucfg_39.proto" beforeDir="false" afterPath="$PROJECT_DIR$/target/sonar/ucfg/java/ucfg_39.proto" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/sonar/ucfg/java/ucfg_4.proto" beforeDir="false" afterPath="$PROJECT_DIR$/target/sonar/ucfg/java/ucfg_4.proto" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/sonar/ucfg/java/ucfg_40.proto" beforeDir="false" afterPath="$PROJECT_DIR$/target/sonar/ucfg/java/ucfg_40.proto" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/sonar/ucfg/java/ucfg_41.proto" beforeDir="false" afterPath="$PROJECT_DIR$/target/sonar/ucfg/java/ucfg_41.proto" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/sonar/ucfg/java/ucfg_42.proto" beforeDir="false" afterPath="$PROJECT_DIR$/target/sonar/ucfg/java/ucfg_42.proto" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/sonar/ucfg/java/ucfg_43.proto" beforeDir="false" afterPath="$PROJECT_DIR$/target/sonar/ucfg/java/ucfg_43.proto" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/sonar/ucfg/java/ucfg_44.proto" beforeDir="false" afterPath="$PROJECT_DIR$/target/sonar/ucfg/java/ucfg_44.proto" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/sonar/ucfg/java/ucfg_45.proto" beforeDir="false" afterPath="$PROJECT_DIR$/target/sonar/ucfg/java/ucfg_45.proto" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/sonar/ucfg/java/ucfg_46.proto" beforeDir="false" afterPath="$PROJECT_DIR$/target/sonar/ucfg/java/ucfg_46.proto" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/sonar/ucfg/java/ucfg_47.proto" beforeDir="false" afterPath="$PROJECT_DIR$/target/sonar/ucfg/java/ucfg_47.proto" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/sonar/ucfg/java/ucfg_48.proto" beforeDir="false" afterPath="$PROJECT_DIR$/target/sonar/ucfg/java/ucfg_48.proto" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/sonar/ucfg/java/ucfg_49.proto" beforeDir="false" afterPath="$PROJECT_DIR$/target/sonar/ucfg/java/ucfg_49.proto" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/sonar/ucfg/java/ucfg_5.proto" beforeDir="false" afterPath="$PROJECT_DIR$/target/sonar/ucfg/java/ucfg_5.proto" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/sonar/ucfg/java/ucfg_50.proto" beforeDir="false" afterPath="$PROJECT_DIR$/target/sonar/ucfg/java/ucfg_50.proto" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/sonar/ucfg/java/ucfg_51.proto" beforeDir="false" afterPath="$PROJECT_DIR$/target/sonar/ucfg/java/ucfg_51.proto" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/sonar/ucfg/java/ucfg_52.proto" beforeDir="false" afterPath="$PROJECT_DIR$/target/sonar/ucfg/java/ucfg_52.proto" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/sonar/ucfg/java/ucfg_53.proto" beforeDir="false" afterPath="$PROJECT_DIR$/target/sonar/ucfg/java/ucfg_53.proto" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/sonar/ucfg/java/ucfg_54.proto" beforeDir="false" afterPath="$PROJECT_DIR$/target/sonar/ucfg/java/ucfg_54.proto" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/sonar/ucfg/java/ucfg_55.proto" beforeDir="false" afterPath="$PROJECT_DIR$/target/sonar/ucfg/java/ucfg_55.proto" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/sonar/ucfg/java/ucfg_56.proto" beforeDir="false" afterPath="$PROJECT_DIR$/target/sonar/ucfg/java/ucfg_56.proto" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/sonar/ucfg/java/ucfg_57.proto" beforeDir="false" afterPath="$PROJECT_DIR$/target/sonar/ucfg/java/ucfg_57.proto" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/sonar/ucfg/java/ucfg_58.proto" beforeDir="false" afterPath="$PROJECT_DIR$/target/sonar/ucfg/java/ucfg_58.proto" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/sonar/ucfg/java/ucfg_59.proto" beforeDir="false" afterPath="$PROJECT_DIR$/target/sonar/ucfg/java/ucfg_59.proto" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/sonar/ucfg/java/ucfg_6.proto" beforeDir="false" afterPath="$PROJECT_DIR$/target/sonar/ucfg/java/ucfg_6.proto" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/sonar/ucfg/java/ucfg_60.proto" beforeDir="false" afterPath="$PROJECT_DIR$/target/sonar/ucfg/java/ucfg_60.proto" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/sonar/ucfg/java/ucfg_61.proto" beforeDir="false" afterPath="$PROJECT_DIR$/target/sonar/ucfg/java/ucfg_61.proto" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/sonar/ucfg/java/ucfg_62.proto" beforeDir="false" afterPath="$PROJECT_DIR$/target/sonar/ucfg/java/ucfg_62.proto" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/sonar/ucfg/java/ucfg_63.proto" beforeDir="false" afterPath="$PROJECT_DIR$/target/sonar/ucfg/java/ucfg_63.proto" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/sonar/ucfg/java/ucfg_64.proto" beforeDir="false" afterPath="$PROJECT_DIR$/target/sonar/ucfg/java/ucfg_64.proto" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/sonar/ucfg/java/ucfg_65.proto" beforeDir="false" afterPath="$PROJECT_DIR$/target/sonar/ucfg/java/ucfg_65.proto" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/sonar/ucfg/java/ucfg_66.proto" beforeDir="false" afterPath="$PROJECT_DIR$/target/sonar/ucfg/java/ucfg_66.proto" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/sonar/ucfg/java/ucfg_67.proto" beforeDir="false" afterPath="$PROJECT_DIR$/target/sonar/ucfg/java/ucfg_67.proto" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/sonar/ucfg/java/ucfg_68.proto" beforeDir="false" afterPath="$PROJECT_DIR$/target/sonar/ucfg/java/ucfg_68.proto" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/sonar/ucfg/java/ucfg_69.proto" beforeDir="false" afterPath="$PROJECT_DIR$/target/sonar/ucfg/java/ucfg_69.proto" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/sonar/ucfg/java/ucfg_7.proto" beforeDir="false" afterPath="$PROJECT_DIR$/target/sonar/ucfg/java/ucfg_7.proto" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/sonar/ucfg/java/ucfg_70.proto" beforeDir="false" afterPath="$PROJECT_DIR$/target/sonar/ucfg/java/ucfg_70.proto" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/sonar/ucfg/java/ucfg_71.proto" beforeDir="false" afterPath="$PROJECT_DIR$/target/sonar/ucfg/java/ucfg_71.proto" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/sonar/ucfg/java/ucfg_72.proto" beforeDir="false" afterPath="$PROJECT_DIR$/target/sonar/ucfg/java/ucfg_72.proto" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/sonar/ucfg/java/ucfg_73.proto" beforeDir="false" afterPath="$PROJECT_DIR$/target/sonar/ucfg/java/ucfg_73.proto" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/sonar/ucfg/java/ucfg_74.proto" beforeDir="false" afterPath="$PROJECT_DIR$/target/sonar/ucfg/java/ucfg_74.proto" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/sonar/ucfg/java/ucfg_75.proto" beforeDir="false" afterPath="$PROJECT_DIR$/target/sonar/ucfg/java/ucfg_75.proto" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/sonar/ucfg/java/ucfg_76.proto" beforeDir="false" afterPath="$PROJECT_DIR$/target/sonar/ucfg/java/ucfg_76.proto" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/sonar/ucfg/java/ucfg_77.proto" beforeDir="false" afterPath="$PROJECT_DIR$/target/sonar/ucfg/java/ucfg_77.proto" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/sonar/ucfg/java/ucfg_78.proto" beforeDir="false" afterPath="$PROJECT_DIR$/target/sonar/ucfg/java/ucfg_78.proto" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/sonar/ucfg/java/ucfg_79.proto" beforeDir="false" afterPath="$PROJECT_DIR$/target/sonar/ucfg/java/ucfg_79.proto" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/sonar/ucfg/java/ucfg_8.proto" beforeDir="false" afterPath="$PROJECT_DIR$/target/sonar/ucfg/java/ucfg_8.proto" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/sonar/ucfg/java/ucfg_80.proto" beforeDir="false" afterPath="$PROJECT_DIR$/target/sonar/ucfg/java/ucfg_80.proto" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/sonar/ucfg/java/ucfg_81.proto" beforeDir="false" afterPath="$PROJECT_DIR$/target/sonar/ucfg/java/ucfg_81.proto" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/sonar/ucfg/java/ucfg_82.proto" beforeDir="false" afterPath="$PROJECT_DIR$/target/sonar/ucfg/java/ucfg_82.proto" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/sonar/ucfg/java/ucfg_83.proto" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/sonar/ucfg/java/ucfg_84.proto" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/sonar/ucfg/java/ucfg_85.proto" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/sonar/ucfg/java/ucfg_86.proto" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/sonar/ucfg/java/ucfg_87.proto" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/sonar/ucfg/java/ucfg_88.proto" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/sonar/ucfg/java/ucfg_89.proto" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/sonar/ucfg/java/ucfg_9.proto" beforeDir="false" afterPath="$PROJECT_DIR$/target/sonar/ucfg/java/ucfg_9.proto" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/sonar/ucfg/java/ucfg_90.proto" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/sonar/ucfg/java/ucfg_91.proto" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/sonar/ucfg/java/ucfg_92.proto" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/sonar/ucfg/java/ucfg_93.proto" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/sonar/ucfg/java/ucfg_94.proto" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/sonar/ucfg2/java/ucfg_10.proto" beforeDir="false" afterPath="$PROJECT_DIR$/target/sonar/ucfg2/java/ucfg_10.proto" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/sonar/ucfg2/java/ucfg_11.proto" beforeDir="false" afterPath="$PROJECT_DIR$/target/sonar/ucfg2/java/ucfg_11.proto" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/sonar/ucfg2/java/ucfg_12.proto" beforeDir="false" afterPath="$PROJECT_DIR$/target/sonar/ucfg2/java/ucfg_12.proto" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/sonar/ucfg2/java/ucfg_13.proto" beforeDir="false" afterPath="$PROJECT_DIR$/target/sonar/ucfg2/java/ucfg_13.proto" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/sonar/ucfg2/java/ucfg_14.proto" beforeDir="false" afterPath="$PROJECT_DIR$/target/sonar/ucfg2/java/ucfg_14.proto" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/sonar/ucfg2/java/ucfg_15.proto" beforeDir="false" afterPath="$PROJECT_DIR$/target/sonar/ucfg2/java/ucfg_15.proto" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/sonar/ucfg2/java/ucfg_16.proto" beforeDir="false" afterPath="$PROJECT_DIR$/target/sonar/ucfg2/java/ucfg_16.proto" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/sonar/ucfg2/java/ucfg_17.proto" beforeDir="false" afterPath="$PROJECT_DIR$/target/sonar/ucfg2/java/ucfg_17.proto" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/sonar/ucfg2/java/ucfg_18.proto" beforeDir="false" afterPath="$PROJECT_DIR$/target/sonar/ucfg2/java/ucfg_18.proto" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/sonar/ucfg2/java/ucfg_19.proto" beforeDir="false" afterPath="$PROJECT_DIR$/target/sonar/ucfg2/java/ucfg_19.proto" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/sonar/ucfg2/java/ucfg_20.proto" beforeDir="false" afterPath="$PROJECT_DIR$/target/sonar/ucfg2/java/ucfg_20.proto" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/sonar/ucfg2/java/ucfg_21.proto" beforeDir="false" afterPath="$PROJECT_DIR$/target/sonar/ucfg2/java/ucfg_21.proto" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/sonar/ucfg2/java/ucfg_22.proto" beforeDir="false" afterPath="$PROJECT_DIR$/target/sonar/ucfg2/java/ucfg_22.proto" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/sonar/ucfg2/java/ucfg_23.proto" beforeDir="false" afterPath="$PROJECT_DIR$/target/sonar/ucfg2/java/ucfg_23.proto" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/sonar/ucfg2/java/ucfg_24.proto" beforeDir="false" afterPath="$PROJECT_DIR$/target/sonar/ucfg2/java/ucfg_24.proto" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/sonar/ucfg2/java/ucfg_25.proto" beforeDir="false" afterPath="$PROJECT_DIR$/target/sonar/ucfg2/java/ucfg_25.proto" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/sonar/ucfg2/java/ucfg_26.proto" beforeDir="false" afterPath="$PROJECT_DIR$/target/sonar/ucfg2/java/ucfg_26.proto" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/sonar/ucfg2/java/ucfg_27.proto" beforeDir="false" afterPath="$PROJECT_DIR$/target/sonar/ucfg2/java/ucfg_27.proto" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/sonar/ucfg2/java/ucfg_28.proto" beforeDir="false" afterPath="$PROJECT_DIR$/target/sonar/ucfg2/java/ucfg_28.proto" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/sonar/ucfg2/java/ucfg_29.proto" beforeDir="false" afterPath="$PROJECT_DIR$/target/sonar/ucfg2/java/ucfg_29.proto" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/sonar/ucfg2/java/ucfg_3.proto" beforeDir="false" afterPath="$PROJECT_DIR$/target/sonar/ucfg2/java/ucfg_3.proto" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/sonar/ucfg2/java/ucfg_30.proto" beforeDir="false" afterPath="$PROJECT_DIR$/target/sonar/ucfg2/java/ucfg_30.proto" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/sonar/ucfg2/java/ucfg_31.proto" beforeDir="false" afterPath="$PROJECT_DIR$/target/sonar/ucfg2/java/ucfg_31.proto" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/sonar/ucfg2/java/ucfg_32.proto" beforeDir="false" afterPath="$PROJECT_DIR$/target/sonar/ucfg2/java/ucfg_32.proto" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/sonar/ucfg2/java/ucfg_33.proto" beforeDir="false" afterPath="$PROJECT_DIR$/target/sonar/ucfg2/java/ucfg_33.proto" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/sonar/ucfg2/java/ucfg_34.proto" beforeDir="false" afterPath="$PROJECT_DIR$/target/sonar/ucfg2/java/ucfg_34.proto" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/sonar/ucfg2/java/ucfg_35.proto" beforeDir="false" afterPath="$PROJECT_DIR$/target/sonar/ucfg2/java/ucfg_35.proto" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/sonar/ucfg2/java/ucfg_36.proto" beforeDir="false" afterPath="$PROJECT_DIR$/target/sonar/ucfg2/java/ucfg_36.proto" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/sonar/ucfg2/java/ucfg_37.proto" beforeDir="false" afterPath="$PROJECT_DIR$/target/sonar/ucfg2/java/ucfg_37.proto" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/sonar/ucfg2/java/ucfg_38.proto" beforeDir="false" afterPath="$PROJECT_DIR$/target/sonar/ucfg2/java/ucfg_38.proto" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/sonar/ucfg2/java/ucfg_39.proto" beforeDir="false" afterPath="$PROJECT_DIR$/target/sonar/ucfg2/java/ucfg_39.proto" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/sonar/ucfg2/java/ucfg_4.proto" beforeDir="false" afterPath="$PROJECT_DIR$/target/sonar/ucfg2/java/ucfg_4.proto" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/sonar/ucfg2/java/ucfg_40.proto" beforeDir="false" afterPath="$PROJECT_DIR$/target/sonar/ucfg2/java/ucfg_40.proto" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/sonar/ucfg2/java/ucfg_41.proto" beforeDir="false" afterPath="$PROJECT_DIR$/target/sonar/ucfg2/java/ucfg_41.proto" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/sonar/ucfg2/java/ucfg_42.proto" beforeDir="false" afterPath="$PROJECT_DIR$/target/sonar/ucfg2/java/ucfg_42.proto" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/sonar/ucfg2/java/ucfg_43.proto" beforeDir="false" afterPath="$PROJECT_DIR$/target/sonar/ucfg2/java/ucfg_43.proto" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/sonar/ucfg2/java/ucfg_44.proto" beforeDir="false" afterPath="$PROJECT_DIR$/target/sonar/ucfg2/java/ucfg_44.proto" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/sonar/ucfg2/java/ucfg_45.proto" beforeDir="false" afterPath="$PROJECT_DIR$/target/sonar/ucfg2/java/ucfg_45.proto" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/sonar/ucfg2/java/ucfg_46.proto" beforeDir="false" afterPath="$PROJECT_DIR$/target/sonar/ucfg2/java/ucfg_46.proto" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/sonar/ucfg2/java/ucfg_47.proto" beforeDir="false" afterPath="$PROJECT_DIR$/target/sonar/ucfg2/java/ucfg_47.proto" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/sonar/ucfg2/java/ucfg_48.proto" beforeDir="false" afterPath="$PROJECT_DIR$/target/sonar/ucfg2/java/ucfg_48.proto" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/sonar/ucfg2/java/ucfg_49.proto" beforeDir="false" afterPath="$PROJECT_DIR$/target/sonar/ucfg2/java/ucfg_49.proto" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/sonar/ucfg2/java/ucfg_5.proto" beforeDir="false" afterPath="$PROJECT_DIR$/target/sonar/ucfg2/java/ucfg_5.proto" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/sonar/ucfg2/java/ucfg_50.proto" beforeDir="false" afterPath="$PROJECT_DIR$/target/sonar/ucfg2/java/ucfg_50.proto" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/sonar/ucfg2/java/ucfg_51.proto" beforeDir="false" afterPath="$PROJECT_DIR$/target/sonar/ucfg2/java/ucfg_51.proto" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/sonar/ucfg2/java/ucfg_52.proto" beforeDir="false" afterPath="$PROJECT_DIR$/target/sonar/ucfg2/java/ucfg_52.proto" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/sonar/ucfg2/java/ucfg_53.proto" beforeDir="false" afterPath="$PROJECT_DIR$/target/sonar/ucfg2/java/ucfg_53.proto" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/sonar/ucfg2/java/ucfg_54.proto" beforeDir="false" afterPath="$PROJECT_DIR$/target/sonar/ucfg2/java/ucfg_54.proto" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/sonar/ucfg2/java/ucfg_55.proto" beforeDir="false" afterPath="$PROJECT_DIR$/target/sonar/ucfg2/java/ucfg_55.proto" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/sonar/ucfg2/java/ucfg_56.proto" beforeDir="false" afterPath="$PROJECT_DIR$/target/sonar/ucfg2/java/ucfg_56.proto" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/sonar/ucfg2/java/ucfg_57.proto" beforeDir="false" afterPath="$PROJECT_DIR$/target/sonar/ucfg2/java/ucfg_57.proto" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/sonar/ucfg2/java/ucfg_58.proto" beforeDir="false" afterPath="$PROJECT_DIR$/target/sonar/ucfg2/java/ucfg_58.proto" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/sonar/ucfg2/java/ucfg_59.proto" beforeDir="false" afterPath="$PROJECT_DIR$/target/sonar/ucfg2/java/ucfg_59.proto" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/sonar/ucfg2/java/ucfg_6.proto" beforeDir="false" afterPath="$PROJECT_DIR$/target/sonar/ucfg2/java/ucfg_6.proto" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/sonar/ucfg2/java/ucfg_60.proto" beforeDir="false" afterPath="$PROJECT_DIR$/target/sonar/ucfg2/java/ucfg_60.proto" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/sonar/ucfg2/java/ucfg_61.proto" beforeDir="false" afterPath="$PROJECT_DIR$/target/sonar/ucfg2/java/ucfg_61.proto" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/sonar/ucfg2/java/ucfg_62.proto" beforeDir="false" afterPath="$PROJECT_DIR$/target/sonar/ucfg2/java/ucfg_62.proto" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/sonar/ucfg2/java/ucfg_63.proto" beforeDir="false" afterPath="$PROJECT_DIR$/target/sonar/ucfg2/java/ucfg_63.proto" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/sonar/ucfg2/java/ucfg_64.proto" beforeDir="false" afterPath="$PROJECT_DIR$/target/sonar/ucfg2/java/ucfg_64.proto" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/sonar/ucfg2/java/ucfg_65.proto" beforeDir="false" afterPath="$PROJECT_DIR$/target/sonar/ucfg2/java/ucfg_65.proto" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/sonar/ucfg2/java/ucfg_66.proto" beforeDir="false" afterPath="$PROJECT_DIR$/target/sonar/ucfg2/java/ucfg_66.proto" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/sonar/ucfg2/java/ucfg_67.proto" beforeDir="false" afterPath="$PROJECT_DIR$/target/sonar/ucfg2/java/ucfg_67.proto" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/sonar/ucfg2/java/ucfg_68.proto" beforeDir="false" afterPath="$PROJECT_DIR$/target/sonar/ucfg2/java/ucfg_68.proto" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/sonar/ucfg2/java/ucfg_69.proto" beforeDir="false" afterPath="$PROJECT_DIR$/target/sonar/ucfg2/java/ucfg_69.proto" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/sonar/ucfg2/java/ucfg_7.proto" beforeDir="false" afterPath="$PROJECT_DIR$/target/sonar/ucfg2/java/ucfg_7.proto" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/sonar/ucfg2/java/ucfg_70.proto" beforeDir="false" afterPath="$PROJECT_DIR$/target/sonar/ucfg2/java/ucfg_70.proto" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/sonar/ucfg2/java/ucfg_71.proto" beforeDir="false" afterPath="$PROJECT_DIR$/target/sonar/ucfg2/java/ucfg_71.proto" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/sonar/ucfg2/java/ucfg_72.proto" beforeDir="false" afterPath="$PROJECT_DIR$/target/sonar/ucfg2/java/ucfg_72.proto" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/sonar/ucfg2/java/ucfg_73.proto" beforeDir="false" afterPath="$PROJECT_DIR$/target/sonar/ucfg2/java/ucfg_73.proto" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/sonar/ucfg2/java/ucfg_74.proto" beforeDir="false" afterPath="$PROJECT_DIR$/target/sonar/ucfg2/java/ucfg_74.proto" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/sonar/ucfg2/java/ucfg_75.proto" beforeDir="false" afterPath="$PROJECT_DIR$/target/sonar/ucfg2/java/ucfg_75.proto" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/sonar/ucfg2/java/ucfg_76.proto" beforeDir="false" afterPath="$PROJECT_DIR$/target/sonar/ucfg2/java/ucfg_76.proto" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/sonar/ucfg2/java/ucfg_77.proto" beforeDir="false" afterPath="$PROJECT_DIR$/target/sonar/ucfg2/java/ucfg_77.proto" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/sonar/ucfg2/java/ucfg_78.proto" beforeDir="false" afterPath="$PROJECT_DIR$/target/sonar/ucfg2/java/ucfg_78.proto" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/sonar/ucfg2/java/ucfg_79.proto" beforeDir="false" afterPath="$PROJECT_DIR$/target/sonar/ucfg2/java/ucfg_79.proto" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/sonar/ucfg2/java/ucfg_8.proto" beforeDir="false" afterPath="$PROJECT_DIR$/target/sonar/ucfg2/java/ucfg_8.proto" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/sonar/ucfg2/java/ucfg_80.proto" beforeDir="false" afterPath="$PROJECT_DIR$/target/sonar/ucfg2/java/ucfg_80.proto" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/sonar/ucfg2/java/ucfg_81.proto" beforeDir="false" afterPath="$PROJECT_DIR$/target/sonar/ucfg2/java/ucfg_81.proto" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/sonar/ucfg2/java/ucfg_82.proto" beforeDir="false" afterPath="$PROJECT_DIR$/target/sonar/ucfg2/java/ucfg_82.proto" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/sonar/ucfg2/java/ucfg_83.proto" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/sonar/ucfg2/java/ucfg_84.proto" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/sonar/ucfg2/java/ucfg_85.proto" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/sonar/ucfg2/java/ucfg_86.proto" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/sonar/ucfg2/java/ucfg_87.proto" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/sonar/ucfg2/java/ucfg_88.proto" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/sonar/ucfg2/java/ucfg_89.proto" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/sonar/ucfg2/java/ucfg_9.proto" beforeDir="false" afterPath="$PROJECT_DIR$/target/sonar/ucfg2/java/ucfg_9.proto" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/sonar/ucfg2/java/ucfg_90.proto" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/sonar/ucfg2/java/ucfg_91.proto" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/sonar/ucfg2/java/ucfg_92.proto" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/sonar/ucfg2/java/ucfg_93.proto" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/sonar/ucfg2/java/ucfg_94.proto" beforeDir="false" />
+    </list>
+    <ignored path="$PROJECT_DIR$/target/" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CoverageDataManager">
+    <SUITE FILE_PATH="coverage/spotitube$All_in_jee.ic" NAME="All in jee Coverage Results" MODIFIED="1540575242921" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+  </component>
+  <component name="CoverageViewManager">
+    <option name="myElementSize" value="241" />
+  </component>
+  <component name="FUSProjectUsageTrigger">
+    <session id="671928588">
+      <usages-collector id="statistics.lifecycle.project">
+        <counts>
+          <entry key="project.open.time.4" value="1" />
+          <entry key="project.opened" value="1" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.open">
+        <counts>
+          <entry key="java" value="32" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.open">
+        <counts>
+          <entry key="JAVA" value="32" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.edit">
+        <counts>
+          <entry key="dummy" value="7" />
+          <entry key="java" value="249" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.edit">
+        <counts>
+          <entry key="JAVA" value="249" />
+          <entry key="PLAIN_TEXT" value="7" />
+        </counts>
+      </usages-collector>
+    </session>
+  </component>
+  <component name="FileEditorManager">
+    <leaf>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/han/dea/mainpackage/controller/TrackControllerTester.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="425">
+              <caret line="39" column="88" selection-start-line="39" selection-start-column="79" selection-end-line="39" selection-end-column="88" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/han/dea/mainpackage/services/PlaylistService.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="238">
+              <caret line="20" column="63" selection-start-line="20" selection-start-column="63" selection-end-line="20" selection-end-column="63" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/han/dea/mainpackage/dao/PlaylistDAO.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="170">
+              <caret line="22" column="36" selection-start-line="22" selection-start-column="36" selection-end-line="22" selection-end-column="36" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/han/dea/mainpackage/dto/track/TracksDTO.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="68">
+              <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
+              <folding>
+                <element signature="e#169#170#0" expanded="true" />
+                <element signature="e#205#206#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/han/dea/mainpackage/controller/LoginControllerTester.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="385">
+              <caret line="38" column="88" selection-start-line="38" selection-start-column="88" selection-end-line="38" selection-end-column="88" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/han/dea/mainpackage/controller/LoginController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="221">
+              <caret line="22" column="20" selection-start-line="22" selection-start-column="20" selection-end-line="22" selection-end-column="20" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/src/main/java/han/dea/mainpackage/services/LoginService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/han/dea/mainpackage/dto/playlist/PlaylistResponseDTO.java" />
+        <option value="$PROJECT_DIR$/src/main/java/han/dea/mainpackage/dao/PlaylistDAO.java" />
+        <option value="$PROJECT_DIR$/src/main/java/han/dea/mainpackage/services/PlaylistService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/han/dea/mainpackage/controller/PlayListController.java" />
+        <option value="$PROJECT_DIR$/src/test/java/han/dea/mainpackage/dao/TrackDaoTester.java" />
+        <option value="$PROJECT_DIR$/src/test/java/han/dea/mainpackage/service/TrackServiceTester.java" />
+        <option value="$PROJECT_DIR$/src/main/java/han/dea/mainpackage/controller/TrackController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/han/dea/mainpackage/services/TrackService.java" />
+        <option value="$PROJECT_DIR$/src/test/java/han/dea/mainpackage/controller/TrackControllerTester.java" />
+      </list>
+    </option>
+  </component>
+  <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsGulpfileManager">
+    <detection-done>true</detection-done>
+    <sorting>DEFINITION_ORDER</sorting>
+  </component>
+  <component name="LogFilters">
+    <option name="FILTER_ERRORS" value="false" />
+    <option name="FILTER_WARNINGS" value="false" />
+    <option name="FILTER_INFO" value="true" />
+    <option name="FILTER_DEBUG" value="true" />
+    <option name="CUSTOM_FILTER" />
+  </component>
+  <component name="ProjectFrameBounds" extendedState="7">
     <option name="x" value="-7" />
     <option name="width" value="974" />
     <option name="height" value="1047" />
   </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="spotitube" type="b2602c69:ProjectViewProjectNode" />
+              <item name="spotitube" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="spotitube" type="b2602c69:ProjectViewProjectNode" />
+              <item name="spotitube" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="spotitube" type="b2602c69:ProjectViewProjectNode" />
+              <item name="spotitube" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="spotitube" type="b2602c69:ProjectViewProjectNode" />
+              <item name="spotitube" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="spotitube" type="b2602c69:ProjectViewProjectNode" />
+              <item name="spotitube" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="mainpackage" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="spotitube" type="b2602c69:ProjectViewProjectNode" />
+              <item name="spotitube" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="mainpackage" type="462c0819:PsiDirectoryNode" />
+              <item name="controller" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="spotitube" type="b2602c69:ProjectViewProjectNode" />
+              <item name="spotitube" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="mainpackage" type="462c0819:PsiDirectoryNode" />
+              <item name="dao" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="spotitube" type="b2602c69:ProjectViewProjectNode" />
+              <item name="spotitube" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="mainpackage" type="462c0819:PsiDirectoryNode" />
+              <item name="services" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="spotitube" type="b2602c69:ProjectViewProjectNode" />
+              <item name="spotitube" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="spotitube" type="b2602c69:ProjectViewProjectNode" />
+              <item name="spotitube" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="spotitube" type="b2602c69:ProjectViewProjectNode" />
+              <item name="spotitube" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="mainpackage" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="spotitube" type="b2602c69:ProjectViewProjectNode" />
+              <item name="spotitube" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="mainpackage" type="462c0819:PsiDirectoryNode" />
+              <item name="controller" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="spotitube" type="b2602c69:ProjectViewProjectNode" />
+              <item name="spotitube" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="mainpackage" type="462c0819:PsiDirectoryNode" />
+              <item name="dao" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="spotitube" type="b2602c69:ProjectViewProjectNode" />
+              <item name="spotitube" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="mainpackage" type="462c0819:PsiDirectoryNode" />
+              <item name="service" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="Scope" />
+      <pane id="PackagesPane" />
+    </panes>
+  </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1540572583439" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1540743859061" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="configurable.group.appearance" />
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager" selected="JUnit.All in jee">
+    <configuration name="All in jee" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="jee" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="TEST_OBJECT" value="package" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TrackControllerTester.testGetTracksForPlaylistGood" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="jee" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="han.dea.mainpackage.controller.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="han.dea.mainpackage.controller" />
+      <option name="MAIN_CLASS_NAME" value="han.dea.mainpackage.controller.TrackControllerTester" />
+      <option name="METHOD_NAME" value="testGetTracksForPlaylistGood" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="han.dea.mainpackage in jee" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="jee" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="han.dea.mainpackage.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="han.dea.mainpackage" />
+      <option name="TEST_OBJECT" value="package" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Tomee" type="TomeeConfiguration" factoryName="Local" APPLICATION_SERVER_NAME="TomEE 8.5.32" ALTERNATIVE_JRE_ENABLED="false">
+      <option name="UPDATING_POLICY" value="restart-server" />
+      <deployment>
+        <artifact name="jee:war">
+          <settings>
+            <option name="CONTEXT_PATH" value="/" />
+          </settings>
+        </artifact>
+      </deployment>
+      <server-settings>
+        <option name="BASE_DIRECTORY_NAME" value="Unnamed_spotitube" />
+      </server-settings>
+      <predefined_log_file id="Tomcat" enabled="true" />
+      <predefined_log_file id="Tomcat Catalina" enabled="true" />
+      <predefined_log_file id="Tomcat Manager" enabled="false" />
+      <predefined_log_file id="Tomcat Host Manager" enabled="false" />
+      <predefined_log_file id="Tomcat Localhost Access" enabled="false" />
+      <RunnerSettings RunnerId="Debug">
+        <option name="DEBUG_PORT" value="52247" />
+      </RunnerSettings>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Cover">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Debug">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Run">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <method v="2">
+        <option name="BuildArtifacts" enabled="true">
+          <artifact name="jee:war" />
+        </option>
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="TomEE Server.Tomee" />
+      <item itemvalue="JUnit.han.dea.mainpackage in jee" />
+      <item itemvalue="JUnit.TrackControllerTester.testGetTracksForPlaylistGood" />
+      <item itemvalue="JUnit.All in jee" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.All in jee" />
+        <item itemvalue="JUnit.TrackControllerTester.testGetTracksForPlaylistGood" />
+        <item itemvalue="JUnit.han.dea.mainpackage in jee" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="6407bb8f-3a60-42b4-988b-a006f56fc94b" name="Default Changelist" comment="" />
+      <created>1540572522933</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1540572522933</updated>
+      <workItem from="1540572526586" duration="3202000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TestHistory">
+    <history-entry file="han_dea_mainpackage_in_jee - 2018.10.26 at 19h 03m 59s.xml">
+      <configuration name="han.dea.mainpackage in jee" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="TrackControllerTester_testGetTracksForPlaylistGood - 2018.10.26 at 19h 33m 39s.xml">
+      <configuration name="TrackControllerTester.testGetTracksForPlaylistGood" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="All_in_jee - 2018.10.26 at 19h 34m 11s.xml">
+      <configuration name="All in jee" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="All_in_jee - 2018.10.28 at 17h 09m 52s.xml">
+      <configuration name="All in jee" configurationId="JUnit" />
+    </history-entry>
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="3202000" />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <editor active="true" />
+    <layout>
+      <window_info id="Designer" />
+      <window_info id="Image Layers" />
+      <window_info id="UI Designer" />
+      <window_info id="Favorites" side_tool="true" />
+      <window_info id="Capture Tool" />
+      <window_info id="Web" side_tool="true" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info anchor="bottom" id="Application Servers" weight="0.32925472" />
+      <window_info anchor="bottom" id="Terminal" weight="0.32925472" />
+      <window_info anchor="bottom" id="Event Log" side_tool="true" />
+      <window_info anchor="bottom" id="Messages" weight="0.32925472" />
+      <window_info anchor="bottom" id="Java Enterprise" />
+      <window_info anchor="bottom" id="Database Changes" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32925472" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.32925472" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="right" id="Palette" />
+      <window_info anchor="right" id="JSF" />
+      <window_info anchor="right" id="Capture Analysis" />
+      <window_info anchor="right" id="CDI" />
+      <window_info anchor="right" id="Maven Projects" />
+      <window_info anchor="right" id="Database" />
+      <window_info anchor="right" id="Palette&#9;" />
+      <window_info anchor="right" id="Theme Preview" />
+      <window_info anchor="right" id="Coverage" side_tool="true" weight="0.32995737" />
+      <window_info anchor="right" id="Bean Validation" />
+      <window_info anchor="right" id="Commander" order="0" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+    </layout>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/src/main/java/han/dea/mainpackage/services/LoginService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="54" selection-start-line="4" selection-start-column="54" selection-end-line="4" selection-end-column="54" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/han/dea/mainpackage/dto/playlist/PlaylistResponseDTO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="18" lean-forward="true" selection-start-line="18" selection-end-line="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/han/dea/mainpackage/dto/playlist/PlaylistRequestDTO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/han/dea/mainpackage/dto/playlist/RequestPlaylistDTO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="21" column="22" selection-start-line="21" selection-start-column="22" selection-end-line="21" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/han/dea/mainpackage/dao/TrackDaoTester.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" selection-start-line="4" selection-end-line="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/han/dea/mainpackage/dao/TrackDAO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1026">
+          <caret line="12" column="13" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/han/dea/mainpackage/service/TrackServiceTester.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="4" selection-start-line="4" selection-start-column="4" selection-end-line="4" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/han/dea/mainpackage/dao/UserDAO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/han/dea/mainpackage/controller/PlayListController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="508">
+          <caret line="40" column="68" selection-start-line="40" selection-start-column="68" selection-end-line="40" selection-end-column="68" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/han/dea/mainpackage/services/TrackService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="24" column="33" selection-start-line="24" selection-start-column="33" selection-end-line="24" selection-end-column="33" />
+          <folding>
+            <element signature="e#284#285#0" expanded="true" />
+            <element signature="e#347#348#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/han/dea/mainpackage/dto/track/TracksDTO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
+          <folding>
+            <element signature="e#169#170#0" expanded="true" />
+            <element signature="e#205#206#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/han/dea/mainpackage/controller/TrackController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="20" column="20" selection-start-line="20" selection-start-column="20" selection-end-line="20" selection-end-column="20" />
+          <folding>
+            <element signature="e#728#729#0" expanded="true" />
+            <element signature="e#776#777#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/han/dea/mainpackage/controller/LoginController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="22" column="20" selection-start-line="22" selection-start-column="20" selection-end-line="22" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/han/dea/mainpackage/controller/LoginControllerTester.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="385">
+          <caret line="38" column="88" selection-start-line="38" selection-start-column="88" selection-end-line="38" selection-end-column="88" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/han/dea/mainpackage/controller/TrackControllerTester.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="425">
+          <caret line="39" column="88" selection-start-line="39" selection-start-column="79" selection-end-line="39" selection-end-column="88" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/han/dea/mainpackage/services/PlaylistService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="20" column="63" selection-start-line="20" selection-start-column="63" selection-end-line="20" selection-end-column="63" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/han/dea/mainpackage/dao/PlaylistDAO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="22" column="36" selection-start-line="22" selection-start-column="36" selection-end-line="22" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
   </component>
   <component name="masterDetails">
     <states>

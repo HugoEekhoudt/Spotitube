@@ -22,4 +22,9 @@ public class TrackController
     {
         return Response.ok(trackService.getTracksExceptForCurrentPlaylist(forPlaylistID)).build();
     }
+
+    public void setTrackService(TrackService trackService)
+    {
+        this.trackService = trackService;
+    }
 }
