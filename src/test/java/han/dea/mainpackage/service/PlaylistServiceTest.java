@@ -12,7 +12,7 @@ import org.mockito.Mockito;
 import java.util.ArrayList;
 import java.util.List;
 
-public class PlaylistServiceTester
+public class PlaylistServiceTest
 {
     private PlaylistService playlistService;
     private PlaylistRequestDTO playlistRequestDTO;

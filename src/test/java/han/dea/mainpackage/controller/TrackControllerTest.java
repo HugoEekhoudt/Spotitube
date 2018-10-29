@@ -15,7 +15,7 @@ import javax.ws.rs.core.Response;
 import java.util.ArrayList;
 import java.util.List;
 
-public class TrackControllerTester
+public class TrackControllerTest
 {
     private TrackController trackController;
     private TrackService trackService;

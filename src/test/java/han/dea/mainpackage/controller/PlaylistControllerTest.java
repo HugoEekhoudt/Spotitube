@@ -12,7 +12,7 @@ import org.mockito.Mockito;
 
 import javax.ws.rs.core.Response;
 
-public class PlaylistControllerTester
+public class PlaylistControllerTest
 {
     private PlayListController playListController;
     private PlaylistService playlistService;

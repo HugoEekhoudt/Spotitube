@@ -10,7 +10,7 @@ import org.mockito.Mockito;
 
 import javax.ws.rs.core.Response;
 
-public class LoginControllerTester
+public class LoginControllerTest
 {
     private LoginController loginController;
     private LoginService loginService;

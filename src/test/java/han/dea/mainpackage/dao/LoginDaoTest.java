@@ -11,7 +11,7 @@ import java.io.IOException;
 import java.io.InputStream;
 import java.io.InputStreamReader;
 
-public class LoginDaoTester
+public class LoginDaoTest
 {
     private ConnectionDAO connectionDAO;
     private LoginDAO loginDAO;

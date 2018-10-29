@@ -6,7 +6,7 @@ import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
-public class PlaylistDaoTester
+public class PlaylistDaoTest
 {
     public static final int USER_FROM_DATABASE = 2;
     public static final int ID_OF_NEW_PLAYLIST = 26;

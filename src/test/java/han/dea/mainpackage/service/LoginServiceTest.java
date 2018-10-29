@@ -9,7 +9,7 @@ import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.mockito.Mockito;
 
-public class LoginServiceTester
+public class LoginServiceTest
 {
     private LoginService loginService;
     private LoginDAO loginDAO;
