@@ -1,10 +1,7 @@
 package han.dea.mainpackage.controller;
 
-import han.dea.mainpackage.dto.login.LoginRequestDTO;
-import han.dea.mainpackage.dto.login.LoginResponseDTO;
 import han.dea.mainpackage.dto.track.TrackDTO;
 import han.dea.mainpackage.dto.track.TracksDTO;
-import han.dea.mainpackage.services.LoginService;
 import han.dea.mainpackage.services.TrackService;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.BeforeEach;
