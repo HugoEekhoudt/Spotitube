@@ -35,7 +35,7 @@ public class LoginServiceTester
     @Test
     public void testGetLoginResponseDTOGood()
     {
-        Mockito.when(loginService.getLoginResponseDTO(loginRequestDTO)).thenReturn(loginResponseDTO);
+        Mockito.when(loginDAO.getUser(loginRequestDTO)).thenReturn(loginResponseDTO);
 
         LoginResponseDTO response = loginService.getLoginResponseDTO(loginRequestDTO);
 

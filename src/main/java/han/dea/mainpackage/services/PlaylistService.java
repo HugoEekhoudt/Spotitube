@@ -18,9 +18,8 @@ public class PlaylistService
 
     public PlaylistResponseDTO getPlaylists(String token)
     {
-        return new PlaylistResponseDTO(123445, playlistDAO.getPlaylists(token));
+        return new PlaylistResponseDTO(playlistDAO.getLengthOfAllPlaylists(), playlistDAO.getPlaylists(token));
     }
-
 
     public void updatePlaylist(int id,String newName)
     {
@@ -46,5 +45,10 @@ public class PlaylistService
     public void removeTrackFromPlaylist(int playlistID, int trackID)
     {
         playlistDAO.removeTrack(playlistID, trackID);
+    }
+
+    public void setPlaylistDAO(PlaylistDAO playlistDAO)
+    {
+        this.playlistDAO = playlistDAO;
     }
 }

@@ -12,6 +12,13 @@ import java.util.logging.Logger;
 
 public class PlaylistDAO
 {
+    public static final String SELECT_ALL_FROM_PLAYLIST = "SELECT * FROM playlist";
+    public static final String UPDATE_PLAYLIST_NAME_WHERE_ID = "UPDATE playlist SET name = ?  WHERE id = ?";
+    public static final String INSERT_INTO_PLAYLIST = "INSERT INTO playlist (name, owner) VALUES (?,?)";
+    public static final String DELETE_FROM_PLAYLIST = "DELETE FROM playlist WHERE id = ?";
+    public static final String SELECT_OWNER_FROM_PLAYLIST_ON_ID = "SELECT owner FROM playlist WHERE id = ?";
+    public static final String INSERT_INTO_TRACKINPLAYLIST = "INSERT INTO trackinplaylist(trackID, playlistID, offlineavailable) VALUES (?,?,?)";
+    public static final String DELETE_FROM_TRACKINPLAYLIST = "DELETE FROM trackinplaylist WHERE trackID = ? AND playlistID = ?";
     @Inject
     UserDAO userDAO;
 
@@ -26,7 +33,7 @@ public class PlaylistDAO
 
         try {
             connectionDAO.startConnection();
-            String query = "SELECT * FROM playlist";
+            String query = SELECT_ALL_FROM_PLAYLIST;
 
             connectionDAO.setPreparedStatement(connectionDAO.getConnection().prepareStatement(query));
 
@@ -68,7 +75,7 @@ public class PlaylistDAO
         try
         {
             connectionDAO.startConnection();
-            String query = "UPDATE playlist SET name = ?  WHERE id = ?";
+            String query = UPDATE_PLAYLIST_NAME_WHERE_ID;
 
             connectionDAO.setPreparedStatement(connectionDAO.getConnection().prepareStatement(query));
             connectionDAO.getPreparedStatement().setString(1, newName);
@@ -91,7 +98,7 @@ public class PlaylistDAO
         try
         {
             connectionDAO.startConnection();
-            String query = "INSERT INTO playlist (name, owner) VALUES (?,?)";
+            String query = INSERT_INTO_PLAYLIST;
 
             connectionDAO.setPreparedStatement(connectionDAO.getConnection().prepareStatement(query));
             connectionDAO.getPreparedStatement().setString(1, playlistRequestDTO.getName());
@@ -117,7 +124,7 @@ public class PlaylistDAO
                 if (getOwnerOfPlaylist(id) == userDAO.getUserIdWithToken(token))
                 {
 
-                    String query = "DELETE FROM playlist WHERE id = ?";
+                    String query = DELETE_FROM_PLAYLIST;
 
                     connectionDAO.setPreparedStatement(connectionDAO.getConnection().prepareStatement(query));
                     connectionDAO.getPreparedStatement().setInt(1, id);
@@ -142,7 +149,7 @@ public class PlaylistDAO
         try
         {
             connectionDAO.startConnection();
-            String query = "SELECT owner FROM playlist WHERE id = ?";
+            String query = SELECT_OWNER_FROM_PLAYLIST_ON_ID;
 
             connectionDAO.setPreparedStatement(connectionDAO.getConnection().prepareStatement(query));
             connectionDAO.getPreparedStatement().setInt(1, id);
@@ -166,12 +173,41 @@ public class PlaylistDAO
         return ownerID;
     }
 
+    public int getLengthOfAllPlaylists()
+    {
+        int length = 0;
+        try
+        {
+            connectionDAO.startConnection();
+            String query = "SELECT SUM(track.duration) FROM track INNER JOIN trackinplaylist ON track.id = trackinplaylist.trackID";
+
+            connectionDAO.setPreparedStatement(connectionDAO.getConnection().prepareStatement(query));
+
+            connectionDAO.setResultSet(connectionDAO.getPreparedStatement().executeQuery());
+            while (connectionDAO.getResultSet().next())
+            {
+                length = connectionDAO.getResultSet().getInt(1);
+            }
+
+            return length;
+        }
+        catch (Exception e)
+        {
+            log.log(Level.SEVERE, "Kan lengte van playlists niet krijgen: " + e.getMessage());
+        }
+        finally
+        {
+            connectionDAO.closeConnections();
+        }
+        return length;
+    }
+
     public void addTrackIntoPlaylist(int playlistID, TrackDTO trackDTO)
     {
         try
         {
             connectionDAO.startConnection();
-            String query = "INSERT INTO trackinplaylist(trackID, playlistID, offlineavailable) VALUES (?,?,?)";
+            String query = INSERT_INTO_TRACKINPLAYLIST;
 
             connectionDAO.setPreparedStatement(connectionDAO.getConnection().prepareStatement(query));
             connectionDAO.getPreparedStatement().setInt(1, trackDTO.getId());
@@ -195,7 +231,7 @@ public class PlaylistDAO
         try
         {
             connectionDAO.startConnection();
-            String query = "DELETE FROM trackinplaylist WHERE trackID = ? AND playlistID = ?";
+            String query = DELETE_FROM_TRACKINPLAYLIST;
 
             connectionDAO.setPreparedStatement(connectionDAO.getConnection().prepareStatement(query));
             connectionDAO.getPreparedStatement().setInt(1, trackID);
@@ -211,5 +247,15 @@ public class PlaylistDAO
         {
             connectionDAO.closeConnections();
         }
+    }
+
+    public void setConnectionDAO(ConnectionDAO connectionDAO)
+    {
+        this.connectionDAO = connectionDAO;
+    }
+
+    public void setUserDAO(UserDAO userDAO)
+    {
+        this.userDAO = userDAO;
     }
 }

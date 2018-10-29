@@ -1,11 +1,16 @@
 package han.dea.mainpackage.dao;
 
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStream;
+import java.io.InputStreamReader;
 import java.sql.*;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 
 public class ConnectionDAO
 {
+    public static final String CHARSET_NAME = "UTF-8";
     private Connection connection;
     private PreparedStatement preparedStatement;
     private ResultSet resultSet;
@@ -104,5 +109,22 @@ public class ConnectionDAO
         {
             log.log(Level.SEVERE, "Kan query niet uitvoeren: " + e.getMessage());
         }
+    }
+
+    public String getInitialDatabaseStructureSql()
+    {
+        InputStream inputStream = getClass().getClassLoader().getResourceAsStream("structure.sql");
+        StringBuilder stringBuilder = new StringBuilder();
+        String line = null;
+
+        try (BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(inputStream, CHARSET_NAME))) {
+            while ((line = bufferedReader.readLine()) != null) {
+                stringBuilder.append(line).append("\n");
+            }
+        } catch (IOException e) {
+            log.log(Level.SEVERE, "Kan h2 database niet krijgen: " + e.getMessage());
+        }
+
+        return stringBuilder.toString();
     }
 }

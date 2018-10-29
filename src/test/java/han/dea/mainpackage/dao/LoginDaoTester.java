@@ -27,7 +27,7 @@ public class LoginDaoTester
         connectionDAO.setTesting(true);
         loginDAO.setConnectionDAO(connectionDAO);
         connectionDAO.startConnection();
-        connectionDAO.runQuery(getInitialDatabaseStructureSql());
+        connectionDAO.runQuery(connectionDAO.getInitialDatabaseStructureSql());
 
         loginRequestDTO = new LoginRequestDTO();
         loginRequestDTO.setUser("hugotest");
@@ -38,23 +38,6 @@ public class LoginDaoTester
         loginResponseDTO.setToken("1234-1234-123");
     }
 
-    public String getInitialDatabaseStructureSql()
-    {
-        InputStream inputStream = getClass().getClassLoader().getResourceAsStream("structure.sql");
-        StringBuilder stringBuilder = new StringBuilder();
-        String line = null;
-
-        try (BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(inputStream, "UTF-8"))) {
-            while ((line = bufferedReader.readLine()) != null) {
-                stringBuilder.append(line).append("\n");
-            }
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
-
-        return stringBuilder.toString();
-    }
-
     @Test
     public void testGetUserGood()
     {
@@ -62,5 +45,6 @@ public class LoginDaoTester
 
         Assertions.assertEquals(loginResponseDTO.getToken(),response.getToken());
 
+        connectionDAO.closeConnections();
     }
 }

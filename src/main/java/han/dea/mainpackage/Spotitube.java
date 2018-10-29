@@ -9,6 +9,7 @@ import javax.ws.rs.Path;
 @Path("/")
 public class Spotitube
 {
+    public static final String LINK_TO_WEBSITE = "http://ci.icaprojecten.nl/spotitube/";
     @Inject
     ConnectionDAO connectionDAO;
 
@@ -16,7 +17,7 @@ public class Spotitube
     public String main()
     {
         connectionDAO.startConnection();
-        return "http://ci.icaprojecten.nl/spotitube/";
+        return LINK_TO_WEBSITE;
     }
 
 }

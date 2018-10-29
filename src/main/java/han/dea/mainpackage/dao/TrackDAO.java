@@ -12,6 +12,8 @@ import java.util.logging.Logger;
 
 public class TrackDAO
 {
+    public static final String SELECT_TRACKS_OF_PLAYLIST = "SELECT * FROM track t INNER JOIN trackinplaylist tp on t.id = tp.trackID WHERE tp.playlistID = ?";
+    public static final String SELECT_TRACKS_NOT_IN_PLAYLIST = "SELECT * FROM track t WHERE NOT EXISTS(SELECT * FROM trackinplaylist tp WHERE tp.trackID = t.id AND tp.playlistID = ?)";
     @Inject
     ConnectionDAO connectionDAO;
 
@@ -23,7 +25,7 @@ public class TrackDAO
         try
         {
             connectionDAO.startConnection();
-            String query = "SELECT * FROM track t INNER JOIN trackinplaylist tp on t.id = tp.trackID WHERE tp.playlistID = ?";
+            String query = SELECT_TRACKS_OF_PLAYLIST;
 
             connectionDAO.setPreparedStatement(connectionDAO.getConnection().prepareStatement(query));
             connectionDAO.getPreparedStatement().setInt(1, id);
@@ -56,7 +58,7 @@ public class TrackDAO
         try
         {
             connectionDAO.startConnection();
-            String query = "SELECT * FROM track t WHERE NOT EXISTS(SELECT * FROM trackinplaylist tp WHERE tp.trackID = t.id AND tp.playlistID = ?)";
+            String query = SELECT_TRACKS_NOT_IN_PLAYLIST;
 
             connectionDAO.setPreparedStatement(connectionDAO.getConnection().prepareStatement(query));
             connectionDAO.getPreparedStatement().setInt(1, playlistID);

@@ -80,4 +80,14 @@ public class PlayListController
         playlistService.removeTrackFromPlaylist(playlistID,trackID);
         return Response.ok(trackService.getTracksForPlaylist(playlistID)).build();
     }
+
+    public void setPlaylistService(PlaylistService playlistService)
+    {
+        this.playlistService = playlistService;
+    }
+
+    public void setTrackService(TrackService trackService)
+    {
+        this.trackService = trackService;
+    }
 }

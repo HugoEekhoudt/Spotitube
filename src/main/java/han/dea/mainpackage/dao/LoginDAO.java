@@ -10,6 +10,7 @@ import java.util.logging.Logger;
 
 public class LoginDAO
 {
+    public static final String SELECT_FROM_USER_USER_ON_LOGIN = "SELECT * FROM user WHERE userName = ? AND password = ?";
     @Inject
     ConnectionDAO connectionDAO;
 
@@ -20,7 +21,7 @@ public class LoginDAO
         try
         {
             connectionDAO.startConnection();
-            String query = "SELECT * FROM user WHERE userName = ? AND password = ?";
+            String query = SELECT_FROM_USER_USER_ON_LOGIN;
             connectionDAO.setPreparedStatement(connectionDAO.getConnection().prepareStatement(query));
             connectionDAO.getPreparedStatement().setString(1, loginRequestDTO.getUser());
             connectionDAO.getPreparedStatement().setString(2, loginRequestDTO.getPassword());

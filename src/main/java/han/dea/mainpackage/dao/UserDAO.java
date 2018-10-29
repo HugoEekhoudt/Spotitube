@@ -7,6 +7,7 @@ import java.util.logging.Logger;
 
 public class UserDAO
 {
+    public static final String SELECT_USER_ON_TOKEN = "SELECT userID FROM user WHERE token = ?";
     @Inject
     ConnectionDAO connectionDAO;
 
@@ -18,7 +19,7 @@ public class UserDAO
         try
         {
             connectionDAO.startConnection();
-            String query = "SELECT userID FROM user WHERE token = ?";
+            String query = SELECT_USER_ON_TOKEN;
 
             connectionDAO.setPreparedStatement(connectionDAO.getConnection().prepareStatement(query));
             connectionDAO.getPreparedStatement().setString(1, token);
@@ -41,5 +42,10 @@ public class UserDAO
             connectionDAO.closeConnections();
         }
         return id;
+    }
+
+    public void setConncectionDAO(ConnectionDAO connectionDAO)
+    {
+        this.connectionDAO = connectionDAO;
     }
 }
